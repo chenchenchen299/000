@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI对话助手</title>
+    <!-- 引入Swiper轮播图CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 顶部区域 -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="profile-photo">
+                    <img src="D:\cursor\003\imgs\4.png" alt="个人照片">
+                </div>
+                <div class="text-container">
+                    <h1>陈彦辉</h1>
+                    <p class="subtitle">大一新生 | 神之化身</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">首页</a></li>
+                    <li><a href="#about" class="nav-link">关于我</a></li>
+                    <li><a href="#ai-chat" class="nav-link modal-trigger">AI助手</a></li>
+                    <li><a href="#contact" class="nav-link">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">我就是神！</h1>
+            <p class="hero-subtitle">我的话即是神谕！</p>
+            <div class="hero-description">
+                <p>大一新生 | 生命不息，浪漫不止</p>
+                <p>追求极致，永不止步</p>
+            </div>
+            <button class="cta-button modal-trigger">与AI对话</button>
+        </div>
+    </section>
+
+    <!-- 中部区域 -->
+    <main>
+        <!-- 轮播图部分 -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="D:\cursor\003\imgs\1.png" alt="图片1">
+                    <div class="swiper-text">相信我，你并不孤独！</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="D:\cursor\003\imgs\2.png" alt="图片2">
+                    <div class="swiper-text">相信我，你并不孤独！</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="D:\cursor\003\imgs\3.png" alt="图片3">
+                    <div class="swiper-text">相信我，你并不孤独！</div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- 对话区域 -->
+        <div class="chat-container">
+            <div class="chat-history" id="chatHistory">
+                <!-- AI欢迎消息 -->
+                <div class="message ai-message">
+                    <div class="message-content">
+                        你好！我是智谱AI助手，很高兴为您服务。让我们开始对话吧！
+                    </div>
+                    <div class="message-time">刚刚</div>
+                </div>
+            </div>
+            
+            <!-- AI正在输入提示 -->
+            <div class="ai-typing" style="display: none;">
+                AI正在回复...
+            </div>
+
+            <!-- 输入区域 -->
+            <div class="chat-input">
+                <textarea id="userInput" placeholder="请输入您想说的话，按Enter发送..." rows="3"></textarea>
+                <button id="sendButton">发送</button>
+                <button id="clearButton">清空对话</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer>
+        <div class="qr-code">
+            <img src="D:\cursor\003\imgs\5.png" alt="微信二维码">
+            <p>扫码关注我们</p>
+        </div>
+    </footer>
+
+    <!-- 引入Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 引入 axios 用于API请求 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- 引入自定义脚本 -->
+    <script src="script.js"></script>
+</body>
+</html> 
